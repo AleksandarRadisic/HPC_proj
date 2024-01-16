@@ -78,7 +78,7 @@ void Expression_builder::start_build_seq()
 
 void Expression_builder::start_build_parallel()
 {
-
+	//omp_set_num_threads(8);
 	auto start_time = std::chrono::high_resolution_clock::now();
 
 	#pragma omp parallel
